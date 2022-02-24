@@ -1,0 +1,27 @@
+{
+    "presets": [
+        [
+            "next/babel",
+            {
+                "transform-runtime":
+                {
+                    "useESModules": false
+                }
+            }
+        ],
+        "@emotion/babel-preset-css-prop",
+    ],
+    "plugins": [
+        ["module-resolver",
+        {
+            "alias":
+            {
+                "~": "./",
+                "#animation": "./components/Animation",
+                "#text": "./components/Text",
+                "#spacing": "./theme/spacing",
+                "#layout": "./components/Layout",
+            }
+        }]
+    ]
+}
